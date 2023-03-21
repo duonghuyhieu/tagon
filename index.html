@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/aboutUs.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/sumitted.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Trang loading -->
+    <div id="page1" class="page active-page">
+      <div class="loading__container" id="loading__front">
+        <img src="./assets/logo.png" alt="" class="loading__logo" />
+      </div>
+      <div id="loading__back"></div>
+    </div>
+
+    <!-- Trang chinh-->
+    <div id="page2" class="page main__container">
+      <div class="header">
+        <img src="./assets/logo.png" alt="" class="logo" />
+        <div class="selectzone__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="selectzone">
+          <a href="#AboutUs" id="AboutUsLink">About us</a>
+          <a href="#Contact" id="ContactLink" class="unselect">Contact</a>
+        </div>
+      </div>
+      <div class="main__body" id="AboutUs">
+        <div>
+          <div class="cards"></div>
+          <h1 class="intro">
+            Meet us at Hannover Messe Expo 2023 “Hall 16, Stand E18” <br />
+            “Vietnam Software and IT Services Association.”
+          </h1>
+          <a href="#Contact" class="btn">Join now</a>
+        </div>
+
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+
+        <div class="contact__container" id="Contact">
+          <div class="contact__list">
+            <h1>CONTACT</h1>
+            <ul class="list">
+              <li>
+                <h2>Email</h2>
+                <p class="list__description">contact@tagon.ai</p>
+              </li>
+              <li>
+                <h2>Phone</h2>
+                <p class="list__description">(+84) 246 660 3178</p>
+              </li>
+              <li>
+                <h2>Address</h2>
+                <p class="list__description">
+                  MHDI Building, No. 60, Hoang Quoc Viet Street <br />
+                  Cau Giay District, Ha Noi City, Vietnam
+                </p>
+              </li>
+              <li>
+                <h2>Website</h2>
+                <a class="list__description" href="https://tagon.ai"
+                  >https://tagon.ai</a
+                >
+              </li>
+              <li>
+                <h2>Facebook</h2>
+                <a
+                  class="list__description"
+                  href="https://www.facebook.com/TagOnGlobal"
+                  >https://www.facebook.com/TagOnGlobal</a
+                >
+              </li>
+              <li>
+                <h2>Youtube</h2>
+                <a
+                  class="list__description"
+                  href="https://www.youtube.com/@TagOnGlobal"
+                  >https://www.youtube.com/@TagOnGlobal</a
+                >
+              </li>
+              <li>
+                <h2>Linkedin</h2>
+                <a
+                  class="list__description"
+                  href="https://www.linkedin.com/company/tagon-data-labeling"
+                  >https://www.linkedin.com/company/tagon-data-labeling</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contact__form">
+            <h1>CONTACT FORM</h1>
+            <form>
+              <label for="name" class="form__label"
+                >Your name <span class="alert"> *</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="form__input" />
+
+              <label for="company" class="form__label"
+                >Your company <span class="alert"> *</span></label
+              >
+              <input
+                type="text"
+                id="company"
+                name="company"
+                required
+                class="form__input" />
+
+              <label for="industry" class="form__label"
+                >Industry <span class="alert"> *</span></label
+              >
+              <select required class="form__input">
+                <option>None</option>
+                <option>Agriculture</option>
+                <option>Chemical</option>
+                <option>Construction</option>
+                <option>Education</option>
+                <option>Financial services</option>
+              </select>
+
+              <label for="email" class="form__label"
+                >Email<span class="alert"> *</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="form__input" />
+
+              <label for="phone" class="form__label"
+                >Phone<span class="alert"> *</span></label
+              >
+              <input type="tel" id="phone" required class="form__input" />
+
+              <div class="form__select">
+                <div class="attend">
+                  <input type="checkbox" required />
+                  <label> Attending Hannover Messe 2023</label>
+                </div>
+
+                <div class="type">
+                  <input type="radio" name="type" required />
+                  <label>Visistor</label>
+                  <input type="radio" name="type" required />
+                  <label>Exhibitor</label>
+                </div>
+              </div>
+
+              <label for="company" class="form__label">Message </label>
+              <input type="text" class="form__message" />
+
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="scroll rotate">
+          <a href="#Contact">Scroll</a>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trang submiited-->
+    <div id="page3" class="page submitted__container">
+      <div class="header">
+        <img src="./assets/logo.png" alt="" class="logo" />
+      </div>
+      <img src="./assets/tick-circle.png" alt="" class="tick" />
+      <h1>Thank you</h1>
+      <p>
+        Your submission has been sent <br />
+        We will contact you soon
+      </p>
+      <div class="cards__mini"></div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

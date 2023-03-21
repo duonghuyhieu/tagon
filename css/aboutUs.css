@@ -1,0 +1,173 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 90vw;
+    z-index: 99;
+}
+
+.selectzone__menu{
+    display: none;
+}
+
+.selectzone {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.selectzone>a {
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.main__container {
+    background: radial-gradient(50% 50% at 50% 50%, #2d3643 0%, #081126 100%);
+    padding: 5vh 5vw 0;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 60px;
+}
+
+.main__body {
+    padding-top: 19vh;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9vw;
+}
+
+.intro {
+    text-align: center;
+    padding: 2vh 0 1vh;
+}
+
+.card {
+    width: 22vw;
+    position: relative;
+}.card-image {
+    width: 22vw;
+    position: relative;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 8px;
+    right: 32px;
+    left: 16px;
+}
+
+.card-title {
+    font-size: 28px;
+}
+
+.card-desc {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 24px;
+    gap: 15px;
+    margin-top: -20px;
+}
+
+.scroll {
+    width: 5vw;
+    position: fixed;
+    right: 4vw;
+    bottom: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scroll>a {
+    text-decoration: none;
+}
+
+.line {
+    margin-left: 10px;
+    min-width: 3vw;
+    height: 0px;
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .selectzone__menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 32px;
+    }
+
+    .main__container{
+        padding: 24px;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .selectzone {
+        display: none;
+        flex-direction: column;
+        top: 18px;
+        padding: 10px 0;
+        background-color: #4e5052;
+    }
+
+    .cards {
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-image {width: 100%;}
+
+    .main__body{
+        padding-top: 128px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+
+    .card-info {
+    bottom: 24px;
+    right: 24px;
+    left: 24px;
+    }
+
+    .intro {
+        font-size: 12px;
+        line-height: 18.5px;
+        padding: 24px 0;
+    }
+
+    .icon {
+display: flex;
+flex-direction: row; 
+
+margin: auto;
+margin-top: 20px;
+width: 140px;   
+padding-bottom: 30vh;}
+
+    .icon > i {
+        font-size: 32px;
+    }
+
+}

@@ -1,0 +1,119 @@
+.contact__container {
+    padding-top: 17vh;
+    height: 83vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contact__list {
+    width: 40vw;
+}
+
+
+.contact__container h1 {
+    font-size: 40px;
+    font-weight: 800px;
+    padding-top: 3vh;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-top: 2vh;
+}
+
+.list__description {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 0.5px;
+}
+
+.contact__form {
+    width: 40vw;
+    height: 80vh;
+    background: linear-gradient(127.51deg, #2D3643 17.44%, #091227 85.85%);
+    box-shadow: -4px 13px 19px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+form {
+    text-align: start;
+    padding: 0 2.5vw;
+}
+
+.form__label {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    margin-top: 1vh;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    width: 100%;
+}
+
+.alert {
+    color: red;
+}
+
+option {
+    color: #081126;
+}
+
+.form__select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__select label {
+    font-size: 16px;
+
+}
+
+.form__message {
+    height: 8vh;
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 1vh 0;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__container {
+        padding-top: 60px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact__form ,.contact__list {
+        width: 100%;
+    }
+
+    .contact__form {
+        margin-top: 32px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .form__select {
+        flex-direction: column;
+    }
+    .attend {
+        margin: 10px 0;
+    }
+
+    option {
+        width: 50vw;
+    }
+
+
+}
