@@ -131,6 +131,8 @@ const ContactElement = document.getElementById("Contact");
 const scrollPosition = 300;
 
 window.addEventListener("scroll", () => {
+  var screenWidth = window.innerWidth;
+
   if (document.documentElement.scrollTop > scrollPosition) {
     scrollDiv.innerHTML = `
       <div class="line"></div> 
@@ -147,7 +149,9 @@ window.addEventListener("scroll", () => {
     `;
     AboutUsLink.classList.remove("unselect");
     ContactLink.classList.add("unselect");
-    intervalId = mobileShow("card");
+    if (screenWidth < 768) {
+      intervalId = mobileShow("card", intervalId);
+    }
   }
 });
 
